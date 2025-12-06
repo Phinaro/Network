@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking - Learn Network Fundamentals</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <section class="header">
+        <div class="head">
+            <div class="Logo">
+                <p><a href="#home"><img src="img/network-logo.svg" alt="Network Hub Logo"> Network Hub</a></p>
+            </div>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="km">ខ្មែរ</button>
+            </div>
+            <div class="navbar">
+                <a href="#home">Home</a>
+                <a href="#introduction">Introduction</a>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">Network Devices</button>
+                    <div class="dropdown-content">
+                        <a href="#router">Router</a>
+                        <a href="#switch">Switch</a>
+                        <a href="#modem">Modem</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropdown-btn">Protocols</button>
+                    <div class="dropdown-content">
+                        <a href="#tcpip">TCP/IP</a>
+                        <a href="#http">HTTP</a>
+                        <a href="#dns">DNS</a>
+                    </div>
+                </div>
+
+                <a href="#security">Security</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 data-translate="welcome-title">Welcome to Network Hub</h1>
+            <p data-translate="welcome-subtitle">Master the fundamentals of computer networking</p>
+            <button class="cta-btn" data-translate="get-started" onclick="document.getElementById('introduction').scrollIntoView({behavior: 'smooth'})">Get Started</button>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="introduction" class="section">
+        <div class="container">
+            <h2 data-translate="what-is-networking">What is Networking?</h2>
+            <p data-translate="networking-desc">Computer networking is the practice of connecting computers and devices together to share resources and information. It forms the backbone of modern communication and data exchange.</p>
+            <div class="cards-grid">
+                <div class="card">
+                    <h3 data-translate="connectivity">📡 Connectivity</h3>
+                    <p data-translate="connectivity-desc">Devices connected through various network technologies to communicate efficiently.</p>
+                </div>
+                <div class="card">
+                    <h3 data-translate="data-transfer">🔄 Data Transfer</h3>
+                    <p data-translate="data-transfer-desc">Reliable and secure transmission of data across networks of any size.</p>
+                </div>
+                <div class="card">
+                    <h3 data-translate="protection">🛡️ Protection</h3>
+                    <p data-translate="protection-desc">Implementing security measures to protect network infrastructure and data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Network Devices Section -->
+    <section id="devices" class="section devices-section">
+        <div class="container">
+            <h2 data-translate="network-devices-title">Network Devices</h2>
+            <div class="devices-grid">
+                <div class="device-card">
+                    <h3 id="router" data-translate="router-title">🔌 Router</h3>
+                    <p data-translate="router-desc">A router is a networking device that forwards data packets between computer networks. It connects different networks and manages traffic between them.</p>
+                    <ul>
+                        <li data-translate="router-feat1">Routes data to correct destinations</li>
+                        <li data-translate="router-feat2">Manages IP addresses</li>
+                        <li data-translate="router-feat3">Provides wireless connectivity</li>
+                    </ul>
+                </div>
+                <div class="device-card">
+                    <h3 id="switch" data-translate="switch-title">🔀 Switch</h3>
+                    <p data-translate="switch-desc">A switch connects devices within the same network and forwards frames to physical ports. It operates at Layer 2 of the network model.</p>
+                    <ul>
+                        <li data-translate="switch-feat1">Connects multiple devices</li>
+                        <li data-translate="switch-feat2">Fast data transmission</li>
+                        <li data-translate="switch-feat3">Reduces network congestion</li>
+                    </ul>
+                </div>
+                <div class="device-card">
+                    <h3 id="modem" data-translate="modem-title">📞 Modem</h3>
+                    <p data-translate="modem-desc">A modem (modulator-demodulator) converts digital data to analog signals and vice versa for transmission over telephone or cable lines.</p>
+                    <ul>
+                        <li data-translate="modem-feat1">Enables internet connectivity</li>
+                        <li data-translate="modem-feat2">Converts signals for transmission</li>
+                        <li data-translate="modem-feat3">Provides WAN connectivity</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Protocols Section -->
+    <section id="protocols" class="section">
+        <div class="container">
+            <h2 data-translate="protocols-title">Network Protocols</h2>
+            <div class="protocols-grid">
+                <div class="protocol-card">
+                    <h3 id="tcpip">TCP/IP</h3>
+                    <p data-translate="tcpip-desc">The foundational suite of protocols for the Internet. TCP ensures reliable delivery while IP handles routing and addressing.</p>
+                    <span class="protocol-label"><span data-translate="layer">Layer</span> 3 & 4</span>
+                </div>
+                <div class="protocol-card">
+                    <h3 id="http">HTTP/HTTPS</h3>
+                    <p data-translate="http-desc">HyperText Transfer Protocol is used for transferring web pages. HTTPS is the secure version with encryption.</p>
+                    <span class="protocol-label"><span data-translate="layer">Layer</span> 7</span>
+                </div>
+                <div class="protocol-card">
+                    <h3 id="dns">DNS</h3>
+                    <p data-translate="dns-desc">Domain Name System translates domain names into IP addresses, making websites accessible through memorable names.</p>
+                    <span class="protocol-label"><span data-translate="layer">Layer</span> 7</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security Section -->
+    <section id="security" class="section security-section">
+        <div class="container">
+            <h2 data-translate="security-title">Network Security</h2>
+            <div class="security-content">
+                <div class="security-item">
+                    <h3 data-translate="firewalls">🔐 Firewalls</h3>
+                    <p data-translate="firewalls-desc">Monitor and control network traffic based on predetermined security rules.</p>
+                </div>
+                <div class="security-item">
+                    <h3 data-translate="encryption">🔒 Encryption</h3>
+                    <p data-translate="encryption-desc">Protect data by converting it into a code to prevent unauthorized access.</p>
+                </div>
+                <div class="security-item">
+                    <h3 data-translate="vpn">🛡️ VPN</h3>
+                    <p data-translate="vpn-desc">Virtual Private Network creates a secure tunnel for data transmission over public networks.</p>
+                </div>
+                <div class="security-item">
+                    <h3 data-translate="authentication">👤 Authentication</h3>
+                    <p data-translate="authentication-desc">Verify the identity of users and devices accessing the network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 data-translate="get-in-touch">Get in Touch</h2>
+            <div class="contact-content">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" data-translate="your-name" required>
+                    <input type="email" placeholder="Your Email" data-translate="your-email" required>
+                    <textarea placeholder="Your Message" data-translate="your-message" rows="5" required></textarea>
+                    <button type="submit" class="submit-btn" data-translate="send-message">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <h3 data-translate="contact-info">Contact Information</h3>
+                    <p><strong data-translate="email">Email:</strong> info@networkhub.com</p>
+                    <p><strong data-translate="phone">Phone:</strong> +1 (555) 123-4567</p>
+                    <p><strong data-translate="address">Address:</strong> 123 Tech Street, Silicon Valley, CA 94025</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p data-translate="footer-text">&copy; 2025 Network Hub. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#" data-translate="privacy">Privacy Policy</a>
+                <a href="#" data-translate="terms">Terms of Service</a>
+                <a href="#" data-translate="sitemap">Sitemap</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/translate.js"></script>
+</body>
+</html>
