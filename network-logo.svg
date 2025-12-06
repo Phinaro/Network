@@ -1,0 +1,59 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <defs>
+    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00bcd4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0097a7;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <circle cx="100" cy="100" r="95" fill="url(#logoGradient)" stroke="#ffffff" stroke-width="2"/>
+  
+  <!-- Network nodes (circles) -->
+  <!-- Top node -->
+  <circle cx="100" cy="40" r="10" fill="#00bcd4" stroke="white" stroke-width="2"/>
+  
+  <!-- Left node -->
+  <circle cx="45" cy="100" r="10" fill="#00bcd4" stroke="white" stroke-width="2"/>
+  
+  <!-- Right node -->
+  <circle cx="155" cy="100" r="10" fill="#00bcd4" stroke="white" stroke-width="2"/>
+  
+  <!-- Bottom-left node -->
+  <circle cx="65" cy="150" r="10" fill="#00bcd4" stroke="white" stroke-width="2"/>
+  
+  <!-- Bottom-right node -->
+  <circle cx="135" cy="150" r="10" fill="#00bcd4" stroke="white" stroke-width="2"/>
+  
+  <!-- Center node (larger) -->
+  <circle cx="100" cy="100" r="12" fill="#ffeb3b" stroke="white" stroke-width="2"/>
+  
+  <!-- Connection lines -->
+  <!-- Top to center -->
+  <line x1="100" y1="50" x2="100" y2="88" stroke="#00bcd4" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Left to center -->
+  <line x1="55" y1="100" x2="88" y2="100" stroke="#00bcd4" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Right to center -->
+  <line x1="112" y1="100" x2="145" y2="100" stroke="#00bcd4" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Bottom-left to center -->
+  <line x1="73" y1="140" x2="92" y2="110" stroke="#00bcd4" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Bottom-right to center -->
+  <line x1="127" y1="110" x2="127" y2="140" stroke="#00bcd4" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Top to left -->
+  <line x1="90" y1="48" x2="53" y2="92" stroke="#00bcd4" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Top to right -->
+  <line x1="110" y1="48" x2="147" y2="92" stroke="#00bcd4" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Left to bottom-left -->
+  <line x1="48" y1="108" x2="63" y2="142" stroke="#00bcd4" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+  
+  <!-- Right to bottom-right -->
+  <line x1="152" y1="108" x2="137" y2="142" stroke="#00bcd4" stroke-width="1.5" stroke-linecap="round" opacity="0.6"/>
+</svg>
